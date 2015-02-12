@@ -1,6 +1,6 @@
 {
     "name": "jeppech/filter",
-    "description": "All sorts of filtering and sanitizing methods",
+    "description": "Filtering and sanitizing methods",
     "authors": [
         {
             "name": "Jeppe Christiansen",
