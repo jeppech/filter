@@ -2,8 +2,8 @@
 
 namespace Jeppech\Filter;
 
-class Validate {
-
+class Validate
+{
     /**
      * Validates $value as email
      *
@@ -108,7 +108,7 @@ class Validate {
             "flags" => ($null_on_fail ? FILTER_NULL_ON_FAILURE : false)
         );
 
-        return filter_var($value, FILTER_VALIDATE_bool,$options);
+        return filter_var($value, FILTER_VALIDATE_bool, $options);
     }
 
     /**
