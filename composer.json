@@ -1,5 +1,5 @@
 {
-    "name": "jeppech/filter",
+    "name": "codr/filter",
     "description": "Filtering and sanitizing methods",
     "authors": [
         {
@@ -7,7 +7,6 @@
             "email": "jeppe@codr.dk"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "ext-filter": "*",
@@ -15,7 +14,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Jeppech\\Filter\\": "src/"
+            "Codr\\Filter\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
