@@ -14,5 +14,6 @@
         "psr-4": {
             "Jeppech\\Filter\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
