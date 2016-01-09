@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeppech\Filter;
+namespace Codr\Filter;
 
 class Validate
 {
