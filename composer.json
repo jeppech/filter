@@ -1,5 +1,5 @@
 {
-    "name": "jeppech/filter",
+    "name": "codr/filter",
     "description": "Filtering and sanitizing methods",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jeppech\\Filter\\": "src/"
+            "Codr\\Filter\\": "src/"
         }
     },
     "minimum-stability": "dev"

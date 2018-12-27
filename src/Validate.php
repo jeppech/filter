@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeppech\Filter;
+namespace Codr\Filter;
 
 class Validate
 {
@@ -35,12 +35,11 @@ class Validate
     {
         $options = array(
             "options" => array(
-                "default"   => false,
+                "default" => false,
                 "min_range" => $min,
                 "max_range" => ($max === false ? PHP_INT_MAX : $max)
             ),
-            "flags" =>  ($allow_hex ? FILTER_FLAG_ALLOW_HEX : false) |
-                        ($allow_oct ? FILTER_FLAG_ALLOW_OCTAL : false)
+            "flags" => ($allow_hex ? FILTER_FLAG_ALLOW_HEX : false) | ($allow_oct ? FILTER_FLAG_ALLOW_OCTAL : false)
         );
 
         return filter_var($value, FILTER_VALIDATE_INT, $options);
@@ -62,10 +61,7 @@ class Validate
             "options" => array(
                 "default" => false
             ),
-            "flags" =>  ($only_v4 ? FILTER_FLAG_IPV4 : false) |
-                        ($only_v6 ? FILTER_FLAG_IPV6 : false) |
-                        ($no_private ? FILTER_FLAG_NO_PRIV_RANGE : false) |
-                        ($no_reserved ? FILTER_FLAG_NO_RES_RANGE : false)
+            "flags" => ($only_v4 ? FILTER_FLAG_IPV4 : false) | ($only_v6 ? FILTER_FLAG_IPV6 : false) | ($no_private ? FILTER_FLAG_NO_PRIV_RANGE : false) | ($no_reserved ? FILTER_FLAG_NO_RES_RANGE : false)
         );
 
         return filter_var($value, FILTER_VALIDATE_IP, $options);
@@ -85,8 +81,7 @@ class Validate
             "options" => array(
                 "default" => false
             ),
-            "flags" =>  ($require_path ? FILTER_FLAG_PATH_REQUIRED : false) |
-                        ($require_query ? FILTER_FLAG_QUERY_REQUIRED : false)
+            "flags" => ($require_path ? FILTER_FLAG_PATH_REQUIRED : false) | ($require_query ? FILTER_FLAG_QUERY_REQUIRED : false)
         );
 
         return filter_var($value, FILTER_VALIDATE_URL, $options);
